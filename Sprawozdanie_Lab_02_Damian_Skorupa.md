@@ -17,10 +17,6 @@ Eksperyment A: Zwiększenie liczby jednostek ukrytych poprawi dokładność mode
 
 Eksperyment B: Wydłużenie okna powyżej 30 próbek wspomoże przewidywanie, jednak skrajne wydłużenie do 120 próbek może przynieść minimalne zyski przy dużym obciążeniu sieci, a dla architektury klasycznego RNN stanowić barierę trenowania.
 
-## LINK GO GITHUBA
-https://github.com/damianero47/Sieci-rekurencyjne
-
-
 ## 3. Wyniki
 
 Punkt odniesienia:
