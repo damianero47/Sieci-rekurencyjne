@@ -30,7 +30,8 @@ MSE heurystyki "ostatnia próbka": 0.00631
 | GRU, hidden=32 | 3393 | 0.00376 ± 0.00001 | 1.56 s |
 | GRU, hidden=64 | 12609 | 0.00375 ± 0.00008 | 2.32 s |
 
-![Krzywe dla Eksperymentu A](wykres_A.png)
+<img width="863" height="470" alt="Wykres_A" src="https://github.com/user-attachments/assets/65d4151a-e9ed-4ebb-a70c-985997bc4672" />
+
 
 ### Eksperyment B: Wpływ długości okna (GRU, hidden=32)
 
@@ -41,7 +42,8 @@ MSE heurystyki "ostatnia próbka": 0.00631
 | GRU, OKNO=60 | 3393 | 0.00343 ± 0.00021 | 3.08 s |
 | GRU, OKNO=120| 3393 | 0.00344 ± 0.00019 | 5.85 s |
 
-![Krzywe dla Eksperymentu B](wykres_B.png)
+<img width="863" height="471" alt="Wykres_B" src="https://github.com/user-attachments/assets/10a55e23-a926-4f9d-9456-da61ee1ecb17" />
+
 
 ### Eksperyment C: Porównanie komórek (hidden=32, OKNO 10 i 120)
 
@@ -54,11 +56,14 @@ MSE heurystyki "ostatnia próbka": 0.00631
 | LSTM, OKNO=120| 4513 | 0.00375 ± 0.00013 | 6.51 s |
 | GRU, OKNO=120| 3393 | 0.00344 ± 0.00019 | 5.86 s |
 
-![Krzywe dla Eksperymentu C](wykres_C.png)
+<img width="863" height="471" alt="Wykres_C" src="https://github.com/user-attachments/assets/fdb497a8-e001-4a22-9d70-989502225e31" />
+
 
 ### Najlepsza Konfiguracja (GRU, hidden=32, OKNO=60):
-![Strata Treningowa vs Testowa](wykres_najlepszy_strata.png)
-![Predykcja a rzeczywistość](wykres_najlepszy_predykcja.png)
+<img width="708" height="393" alt="wykres_najlepszy_strata" src="https://github.com/user-attachments/assets/6ecf929e-10e7-4f56-8a2b-4cc6ee9d6085" />
+
+<img width="838" height="317" alt="wykres_najlepszy_predykcja" src="https://github.com/user-attachments/assets/73419548-a1a4-468f-8ad9-7a70f9de99a6" />
+
 
 ## 4. Analiza i interpretacja
 Wygenerowane wyniki jednoznacznie wskazują, że każda konfiguracja badanych sieci uczących bez problemu przebiła próg bazowy wyznaczony przez heurystykę "ostatnia próbka". Zastosowanie większej architektury znacząco zwiększyło czas uczenia (np. z 0.32s dla klasycznego RNN do 6.51s dla LSTM na długim oknie), co przełożyło się na widoczną, ale nie w każdym przypadku usprawiedliwioną redukcję błędu.
