@@ -11,10 +11,15 @@ Narzędzia: Python, PyTorch, Matplotlib.
 Konfiguracja eksperymentu: Wszystkie testy (oprócz badanej zmiennej) wykonano przy stałych parametrach: `epoki=20`, `lr=1e-2`, `batch=64`. 
 Metodologia oceny: Każdą konfigurację wytrenowano 3-krotnie (ziarna: 0, 1, 2), a jako główną metrykę podano średnią stratę testową MSE z ostatnich 5 epok wraz z odchyleniem standardowym.
 
+
 ### Hipotezy (sformułowane przed uruchomieniem):
 Eksperyment A: Zwiększenie liczby jednostek ukrytych poprawi dokładność modelu, jednak przy wartości `hidden=64` dla prostego sygnału sinusoidalnego nastąpi stagnacja poprawy i nieuzasadniony wzrost czasu treningu.
 
 Eksperyment B: Wydłużenie okna powyżej 30 próbek wspomoże przewidywanie, jednak skrajne wydłużenie do 120 próbek może przynieść minimalne zyski przy dużym obciążeniu sieci, a dla architektury klasycznego RNN stanowić barierę trenowania.
+
+## LINK GO GITHUBA
+https://github.com/damianero47/Sieci-rekurencyjne
+
 
 ## 3. Wyniki
 
